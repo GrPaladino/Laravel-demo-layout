@@ -1,1 +1,91 @@
 @import "~bootstrap/scss/bootstrap";
+
+@mixin d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+:root {
+    --primary-color: #0082f9;
+}
+
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+
+header {
+
+    .upper-header {
+    height: 20px;
+    background-color: var(--primary-color);
+
+    
+        .container ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            line-height: 100%;
+
+            a {
+                font-size: .5rem;
+                margin-left: 1rem;
+                margin-left: 1rem;
+            }
+        }
+
+       
+    }
+
+    .bottom-header {
+        @include d-flex;
+        gap: 50px;
+       
+
+        
+        .logo {
+            max-width: 80px;
+            max-height: 80px;
+        }
+        
+        .navbar {
+            flex-grow: 1;
+
+            
+            ul {
+                @include d-flex;
+                gap: 20px;
+                width: 100%;
+    
+    
+                a {
+                    color: #464646;
+                    font-size: .8rem;
+                    font-weight: bold;
+                }
+            }
+
+        }
+        
+
+        .search-bar input {
+            border: none;
+            max-width: 100px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+    }
+}
