@@ -15,34 +15,34 @@
         <nav class="navbar">
             <ul>
                 <li>
-                    <a href="#">CHARACTERS</a>
+                    <a @if (Route::currentroutename()=="home" ) class="active" @endif href="{{route('home')}}">CHARACTERS</a>
                 </li>
                 <li>
-                    <a href="#">COMICS</a>
+                    <a @if (Route::currentroutename()=="comics" ) class="active" @endif href="{{route('comics')}}">COMICS</a>
                 </li>
                 <li>
-                    <a href="#">MOVIES</a>
+                    <a @if (Route::currentroutename()=="home" ) class="active" @endif href="{{route('home')}}">MOVIES</a>
                 </li>
                 <li>
-                    <a href="#">TV</a>
+                    <a @if (Route::currentroutename()=="home" ) class="active" @endif href="{{route('home')}}">TV</a>
                 </li>
                 <li>
-                    <a href="#">GAMES</a>
+                    <a @if (Route::currentroutename()=="home" ) class="active" @endif href="{{route('home')}}">GAMES</a>
                 </li>
                 <li>
-                    <a href="#">COLLECTIBLES</a>
+                    <a @if (Route::currentroutename()=="home" ) class="active" @endif href="{{route('home')}}">COLLECTIBLES</a>
                 </li>
                 <li>
-                    <a href="#">VIDEOS</a>
+                    <a @if (Route::currentroutename()=="home" ) class="active" @endif href="{{route('home')}}">VIDEOS</a>
                 </li>
                 <li>
-                    <a href="#">FANS</a>
+                    <a @if (Route::currentroutename()=="home" ) class="active" @endif href="{{route('home')}}">FANS</a>
                 </li>
                 <li>
-                    <a href="#">NEWS</a>
+                    <a @if (Route::currentroutename()=="home" ) class="active" @endif href="{{route('home')}}">NEWS</a>
                 </li>
                 <li>
-                    <a href="#">SHOP</a>
+                    <a @if (Route::currentroutename()=="home" ) class="active" @endif href="{{route('home')}}">SHOP</a>
                 </li>
             </ul>
         </nav>

@@ -1,5 +1,5 @@
 @extends('layout.app')
 
 @section('main-content')
-<h1>Homepage</h1>
+<h1>Comics</h1>
 @endsection

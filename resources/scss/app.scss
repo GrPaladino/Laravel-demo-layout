@@ -70,13 +70,27 @@ header {
                 @include d-flex;
                 gap: 20px;
                 width: 100%;
-    
-    
-                a {
-                    color: #464646;
-                    font-size: .8rem;
-                    font-weight: bold;
+
+                li {
+
+                    
+
+                    a {
+                        color: #464646;
+                        font-size: .8rem;
+                        font-weight: bold;
+                        padding: 1rem 0;
+   
+                    }
+
+                    a.active {
+                        border-bottom: 2px solid var(--primary-color);
+                    }
                 }
+
+               
+    
+    
             }
 
         }
