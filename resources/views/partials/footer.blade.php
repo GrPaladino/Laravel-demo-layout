@@ -124,6 +124,33 @@
             </div>
         </div>
     </div>
-    <div class="bottom-footer"></div>
+    <div class="bottom-footer">
+        <div class="container py-5">
+            <div class="left">
+                <a href="#">SIGN-UP NOW!</a>
+            </div>
+            <div class="right">
+                <p class="me-5">FOLLOW US</p>
+                <ul>
+                    <li>
+                        <img src="{{Vite::asset('resources/images/footer-facebook.png')}}" alt="">
+                    </li>
+                    <li>
+                        <img src="{{Vite::asset('resources/images/footer-twitter.png')}}" alt="">
+                    </li>
+                    <li>
+                        <img src="{{Vite::asset('resources/images/footer-youtube.png')}}" alt="">
+                    </li>
+                    <li>
+                        <img src="{{Vite::asset('resources/images/footer-pinterest.png')}}" alt="">
+                    </li>
+                    <li>
+                        <img src="{{Vite::asset('resources/images/footer-periscope.png')}}" alt="">
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
 
 </footer>

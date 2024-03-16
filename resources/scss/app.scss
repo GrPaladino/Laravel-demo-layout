@@ -92,71 +92,104 @@ header {
 
 // * FOOTER
 .upper-footer {
-    background-image: url('../images/footer-bg.jpg');
+        background-image: url('../images/footer-bg.jpg');
 
-    .container {
-        height: 100%;
-        @include d-flex;
+        .container {
+            @include d-flex;
 
-        .left {
-            height: 100%;
-            padding: 30px 0;
+            .left {
+                padding: 30px 0;
 
-            .lists {
+                .lists {
 
-                @include d-flex();
-                align-items: baseline;
-                width: 330px;
-    
-                .list {
-                    height: 100%;
-                    
-                    h6 {
-                        color: white;
-                    }
+                    @include d-flex();
+                    align-items: baseline;
+                    width: 330px;
         
-                    li {
-                        height: 20px;
+                    .list {
                         
-                        a {
-                            font-size: .5rem;
-                            color: #7f9695;
+                        h6 {
+                            color: white;
+                        }
+            
+                        li {
+                            height: 20px;
+                            
+                            a {
+                                font-size: .5rem;
+                                color: #7f9695;
+                            }
                         }
                     }
+
+                }
+                
+                p {
+                    color: #7f9695;
+                    font-size: .6rem;
+                    width: 75%;
+
+
                 }
 
-            }
-            
-            p {
-                color: #7f9695;
-                font-size: .6rem;
-                width: 75%;
-
 
             }
 
-
-        }
+            .rigth {
+                width: 37%;
+                
+                @include d-flex();
+        
+        
+        
+                .img {
+                    overflow: hidden;
+                    width: 100%;
+                    aspect-ratio: 1;
     
     
-        .rigth {
-            width: 35%;
-            height: 100%;
-            @include d-flex;
-            justify-content: center;
-            overflow: hidden;
+                    img {
+                        aspect-ratio: 1;
+                        width: 105%;
     
-    
-    
-            .img {
-                width: 100%;
-                aspect-ratio: 1;
+                    }
+                }
             }
         }
-    }
+    
+        
+    
 
 
-    // debug
-    height: 400px;
 }
 
+.bottom-footer {
+    background-color: #303030;
+
+    .container {
+        @include d-flex();
+
+            .left {
+                padding: 12px;
+                border: 2px solid var(--primary-color);
+                font-weight: bold;
+            }
+
+            .right {
+                @include d-flex();
+
+                p {
+                    font-size: 1.2rem;
+                    color: var(--primary-color);
+                    font-weight: bolder;
+                    margin: 0;
+                    
+                }
+
+                ul {
+                    @include d-flex();
+                    gap: 20px;
+                }
+            }
+    }
+}
