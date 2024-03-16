@@ -7,8 +7,9 @@
             CURRENT SERIES
         </p>
         <div class="row g-3">
+
             @foreach($comics as $comic)
-            <div class="col-2">
+            <a class="col-2" href="#">
                 <div class=" card card-img-top">
                     <div class="img">
                         <img src="{{$comic['thumb']}}" class="card-img-top" alt="...">
@@ -17,11 +18,12 @@
                     <h6 class="py-3">{{$comic["series"]}}</h6>
 
                 </div>
-            </div>
-
+            </a>
             @endforeach
+
+
         </div>
-        <a class="py-2" href="#">LOAD MORE</a>
+        <a class="load py-2" href="#">LOAD MORE</a>
     </div>
 </div>
 @endsection

@@ -116,7 +116,7 @@ header {
     position: relative;
 
     .title,
-    a {
+    .load {
         text-align: center;
         color: white;
         background-color: var(--primary-color);
@@ -134,7 +134,7 @@ header {
 
     }
 
-    a {
+    .load {
         width: 200px;
         font-size: .8rem;
 
