@@ -3,6 +3,9 @@
 @section('main-content')
 <div class="comics py-5">
     <div class="container">
+        <p class="title fs-4 py-2">
+            CURRENT SERIES
+        </p>
         <div class="row g-3">
             @foreach($comics as $comic)
             <div class="col-2">
@@ -18,6 +21,7 @@
 
             @endforeach
         </div>
+        <a class="py-2" href="#">LOAD MORE</a>
     </div>
 </div>
 @endsection
