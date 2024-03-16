@@ -66,3 +66,8 @@ Route::get('/shop', function () {
   $comics = config('comics');
   return view('partials.shop', compact('comics'));
 })->name('shop');
+
+Route::get('/comic_demo', function () {
+  $comics = config('comics');
+  return view('partials.comic_demo', compact('comics'));
+})->name('comic_demo');
