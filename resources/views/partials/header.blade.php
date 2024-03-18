@@ -11,7 +11,10 @@
     <div class="bottom-header container py-3">
 
         <div class="logo">
-            <img src=" {{ Vite::asset("resources/images/dc-logo.png")}} " alt=""></div>
+            <a href="{{route('home')}}">
+                <img src=" {{ Vite::asset("resources/images/dc-logo.png")}} " alt="">
+            </a>
+        </div>
         <nav class="navbar">
             <ul>
                 <li>
