@@ -1,26 +1,32 @@
 @extends('layout.app')
 
 @section('main-content')
-<div class="comics py-5">
+<div class="comic-detail pt-5">
     <div class="blue-line"></div>
-    <p class="title fs-4 py-2">
-        ciao
-    </p>
-    <div class="upper-comic pb-4">
+    <div class="upper-comic pb-5">
+        <div class="thumb-wrapper">
+            <span class="thumb-up">COMIC BOOK</span>
+            <img src="{{$comic['thumb']}}" alt="">
+            <span class="thumb-up">VIEW GALLERY</span>
+
+
+        </div>
         <div class="wrapper">
             <div class="left-comic mt-5">
-                <h1 class="mb-3">{{ $comic["series"] }}</h1>
+                <h1 class="mb-3">{{ $comic["title"] }}</h1>
                 <div class="price-banner">
                     <div class="price px-4">
-                        <p>U.S. Price: <span>$19.90</span></p>
-                        <p>Availeble</p>
+                        <p>U.S. Price: <span>{{$comic['price']}}</span></p>
+                        <p>Available</p>
                     </div>
 
                     <div class="availability">
-                        <span>Check Availability</span>
+                        <select class="form-select">
+                            <option selected>Check Availability</option>
+                        </select>
                     </div>
                 </div>
-                <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate iure alias inventore tempora, quod nulla architecto eveniet ipsam, ad corporis laborum excepturi numquam nisi nesciunt assumenda. Totam laudantium alias explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur, ex totam aperiam tempore eos nulla molestiae soluta aliquid quidem ea impedit quibusdam praesentium similique dolorum adipisci voluptatum reiciendis nemo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas aut reiciendis ab sapiente optio officia tenetur, fugit pariatur illum deserunt sunt vel. At distinctio molestias aut, obcaecati doloremque cupiditate!Lorem</p>
+                <p class="mt-3">{{$comic["description"]}}</p>
             </div>
             <div class="right-comic mt-5">
                 <span>ADVERTISEMENT</span>
@@ -54,15 +60,15 @@
                     <tbody>
                         <tr>
                             <th class="col-3" scope="row">Series:</th>
-                            <td>Action Comics</td>
+                            <td>{{$comic['series']}}</td>
                         </tr>
                         <tr>
                             <th scope="row">U.S. Price:</th>
-                            <td class="color">$19.99</td>
+                            <td class="color">{{$comic['price']}}</td>
                         </tr>
                         <tr>
                             <th scope="row">On Sale Date</th>
-                            <td class="color">October 02 2018</td>
+                            <td class="color">{{$comic['sale_date']}}</td>
                         </tr>
 
                     </tbody>
