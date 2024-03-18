@@ -4,7 +4,7 @@
 <div class="comics py-5">
     <div class="blue-line"></div>
     <p class="title fs-4 py-2">
-        comic-thumb
+        ciao
     </p>
     <div class="upper-comic pb-4">
         <div class="wrapper">
