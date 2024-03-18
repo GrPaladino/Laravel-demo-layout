@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,19 +14,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-  return view('home');
-})->name('home');
+Route::get('/', [PageController::class, 'index'])->name('home');
 
+Route::get('/comics', [PageController::class, "comics"])->name('comics');
+
+//  COMICS DETAIL PAGE
+Route::get('/comic_detail/{index}', [PageController::class, "comicDetail"])->name('comic_detail');
+
+
+
+//  DEMO ROUTES
 Route::get('/characters', function () {
   $comics = config('comics');
   return view('partials.characters', compact('comics'));
 })->name('characters');
-
-Route::get('/comics', function () {
-  $comics = config('comics');
-  return view('partials.comics', compact('comics'));
-})->name('comics');
 
 Route::get('/movies', function () {
   $comics = config('comics');
@@ -67,7 +69,4 @@ Route::get('/shop', function () {
   return view('partials.shop', compact('comics'));
 })->name('shop');
 
-Route::get('/comic_demo', function () {
-  $comics = config('comics');
-  return view('partials.comic_demo', compact('comics'));
-})->name('comic_demo');
+

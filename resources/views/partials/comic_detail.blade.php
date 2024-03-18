@@ -9,7 +9,7 @@
     <div class="upper-comic pb-4">
         <div class="wrapper">
             <div class="left-comic mt-5">
-                <h1 class="mb-3">Comic-title</h1>
+                <h1 class="mb-3">{{ $comic["series"] }}</h1>
                 <div class="price-banner">
                     <div class="price px-4">
                         <p>U.S. Price: <span>$19.90</span></p>
